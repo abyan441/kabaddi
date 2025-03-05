@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="tv_header" type="id" />
+    <item name="tv_team_a" type="id" />
+    <item name="tv_score_a" type="id" />
+    <item name="guideline" type="id" />
+    <item name="tv_team_b" type="id" />
+    <item name="tv_score_b" type="id" />
+    <item name="view_separator" type="id" />
+    <item name="btn_plus1_a" type="id" />
+    <item name="btn_plus2_a" type="id" />
+    <item name="btn_plus1_b" type="id" />
+    <item name="btn_plus2_b" type="id" />
+    <item name="btn_reset" type="id" />
+</resources>
