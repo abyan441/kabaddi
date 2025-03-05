@@ -74,8 +74,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"/>
 
-    <!-- Garis pemisah -->
-
     <!-- Tombol +1 dan +2 untuk Team A -->
     <View
         android:id="@+id/view_separator"
@@ -113,7 +111,6 @@
         app:layout_constraintHorizontal_bias="0.5"/>
 
     <!-- Tombol +1 dan +2 untuk Team B -->
-
     <Button
         android:id="@+id/btn_plus1_b"
         android:layout_width="wrap_content"
@@ -140,8 +137,6 @@
         app:layout_constraintHorizontal_bias="0.5"/>
 
     <!-- Tombol RESET -->
-
-    <!-- Garis panduan tengah -->
     <Button
         android:id="@+id/btn_reset"
         android:layout_width="wrap_content"
