@@ -73,7 +73,7 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    // Fungsi untuk memperbarui tampilan skor
+    // Fungsi untuk memperbarui tampilan skor Kabaddi
     private fun updateScores() {
         tvScoreA.text = scoreViewModel.scoreA.toString()
         tvScoreB.text = scoreViewModel.scoreB.toString()
