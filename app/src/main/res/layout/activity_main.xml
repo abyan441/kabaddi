@@ -1,4 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
+<layout>
+<data>
+    <variable
+        name="ScoreViewModel"
+        type="com.example.minggu_3.ScoreViewModel" />
+</data>
+
 <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -12,7 +19,7 @@
         android:id="@+id/tv_header"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:background="@color/black"
+        android:background="@color/purple"
         android:gravity="center"
         android:text="KabaddiKounter"
         android:textColor="@android:color/white"
@@ -74,6 +81,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"/>
 
+    <!-- Garis pemisah -->
+
     <!-- Tombol +1 dan +2 untuk Team A -->
     <View
         android:id="@+id/view_separator"
@@ -111,6 +120,7 @@
         app:layout_constraintHorizontal_bias="0.5"/>
 
     <!-- Tombol +1 dan +2 untuk Team B -->
+
     <Button
         android:id="@+id/btn_plus1_b"
         android:layout_width="wrap_content"
@@ -137,6 +147,8 @@
         app:layout_constraintHorizontal_bias="0.5"/>
 
     <!-- Tombol RESET -->
+
+    <!-- Garis panduan tengah -->
     <Button
         android:id="@+id/btn_reset"
         android:layout_width="wrap_content"
@@ -157,3 +169,4 @@
         app:layout_constraintGuide_percent="0.5" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
