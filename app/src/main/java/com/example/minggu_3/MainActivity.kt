@@ -2,6 +2,7 @@ package com.example.minggu_3
 
 import android.os.Bundle
 import androidx.activity.viewModels
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
@@ -24,6 +25,11 @@ class MainActivity : AppCompatActivity() {
 
         scoreViewModel.scoreB.observe(this) { newScoreB ->
             binding.tvScoreB.text = newScoreB.toString()
+        }
+
+        // 🔥 Menambahkan observer untuk menang
+        scoreViewModel.winner.observe(this) { winner ->
+            winner?.let { showWinnerDialog(it) }
         }
 
         // Event Listener untuk tombol Team A
@@ -55,5 +61,15 @@ class MainActivity : AppCompatActivity() {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom)
             insets
         }
+    }
+
+    // 🔥 Fungsi untuk menampilkan pemenang
+    private fun showWinnerDialog(winner: String) {
+        AlertDialog.Builder(this)
+            .setTitle("Game Over")
+            .setMessage(winner)
+            .setPositiveButton("OK") { _, _ -> scoreViewModel.resetScore() }
+            .setCancelable(false)
+            .show()
     }
 }
